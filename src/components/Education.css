@@ -1,0 +1,45 @@
+.education-section {
+  background: #eef2f7;
+}
+
+.education-section .section-title {
+  color: #0a192f;
+}
+
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education-card {
+  display: flex;
+  gap: 30px;
+  background: var(--navy-light);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateX(10px);
+  border-color: rgba(216, 177, 48, 0.3);
+}
+
+.education-content { flex: 1; }
+
+.education-institution {
+  font-size: 15px;
+  color: var(--gray-light);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .education-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

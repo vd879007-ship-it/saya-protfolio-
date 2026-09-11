@@ -1,0 +1,98 @@
+.skills-section { 
+  background: #ffffff;
+  padding: 80px 0;
+  overflow: hidden;
+} 
+
+.skills-section .section-title {
+  color: #173d2a;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skill-card {
+  width: 100%;
+  max-width: 190px;
+  background: #061a42;
+  border: 2px solid #061a42;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  /* Entrance animation */
+  opacity: 0;
+  animation: cardFadeUp 0.6s ease forwards, floatCard 3s ease-in-out infinite;
+  animation-delay: var(--delay), calc(var(--delay) + 0.6s);
+}
+
+@keyframes cardFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.skill-card:hover {
+  animation-play-state: paused;
+  transform: translateY(-14px) scale(1.05);
+  border-color: var(--skill-color);
+  box-shadow: 0 15px 35px rgba(233, 170, 0, 0.3);
+  background: #022669;
+}
+
+.skill-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover .skill-icon { 
+  transform: scale(1.2) rotate(8deg);
+}
+
+.skill-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}

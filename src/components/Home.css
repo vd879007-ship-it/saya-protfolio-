@@ -1,0 +1,500 @@
+/* =========================================
+   HOME SECTION
+========================================= */
+
+.home-section {
+  min-height: 88vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 50px 60px;
+  overflow: hidden;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.home-content {
+  position: relative;
+  z-index: 5;
+  animation: fadeLeft 1s ease;
+}
+
+.hello-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 2px solid #061a42;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #061a42;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.hello-badge::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #061a42;
+  bottom: -5px;
+  right: -5px;
+}
+
+.home-content h1 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #111111;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-content h1 span {
+  color: #e9aa00;
+  font-style: italic;
+}
+
+.home-content h2 {
+  margin: 5px 0 20px;
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #111111;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-description {
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777777;
+  margin-bottom: 30px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.home-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.portfolio-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 8px 12px 22px;
+  background: #061a42;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.portfolio-btn span {
+  width: 35px;
+  height: 35px;
+  background: #f5b400;
+  color: #061a42;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-btn:hover {
+  transform: translateY(-3px);
+  background: #0f2e1f;
+}
+
+.hire-btn {
+  padding: 13px 28px;
+  border: 2px solid #777777;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hire-btn:hover {
+  background: #061a42;
+  border-color: #061a42;
+  color: white;
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.home-social {
+  display: flex;
+  gap: 12px;
+}
+
+.home-social a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #061a42;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+.home-social a:hover {
+  background: #f5b400;
+  color: #061a42;
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   IMAGE SECTION
+========================================= */
+
+.home-visual {
+  position: relative;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeRight 1s ease;
+}
+
+/* =========================================
+   ARCH PHOTO FRAME
+========================================= */
+
+.photo-frame {
+  position: relative;
+  width: 340px;
+  height: 470px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 180px 180px 20px 20px;
+  z-index: 2;
+}
+
+/* Outer border */
+.photo-frame::before {
+  content: "";
+  position: absolute;
+  width: 365px;
+  height: 495px;
+  border: 1.5px solid #d8b26a;
+  border-radius: 190px 190px 25px 25px;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* Second border */
+.photo-frame::after {
+  content: "";
+  position: absolute;
+  width: 385px;
+  height: 515px;
+  border: 1px solid rgba(216, 178, 106, 0.35);
+  border-radius: 200px 200px 30px 30px;
+  top: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+/* =========================================
+   YOUR PHOTO
+========================================= */
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 180px 180px 20px 20px;
+}
+
+/* =========================================
+   DECORATIVE STARS
+========================================= */
+
+.decor-star {
+  position: absolute;
+  color:#061a42;
+  font-size: 25px;
+  z-index: 5;
+  animation: starFloat 3s ease-in-out infinite;
+}
+
+.star-one {
+  left: 55px;
+  top: 230px;
+}
+
+.star-two {
+  right: 45px;
+  top: 110px;
+  font-size: 20px;
+  animation-delay: 1s;
+}
+
+/* =========================================
+   BOTTOM SKILL BAR (STRAIGHT & SMOOTH ANIMATION)
+========================================= */
+
+.skill-marquee {
+  width: 100%;
+  background: #061a42;
+  overflow: hidden;
+  padding: 16px 0;
+  margin-top: 0;
+  transform: none; /* Ensures it is completely straight */
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 25s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  white-space: nowrap;
+  font-size: 21px;
+  font-weight: 700;
+  color: #f0e906;
+  padding-right: 45px;
+}
+
+.marquee-content b {
+  font-size: 25px;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes starFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+  .home-section {
+    padding: 120px 30px 50px;
+  }
+
+  .home-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-content h1,
+  .home-content h2 {
+    font-size: 44px;
+  }
+
+  .home-description {
+    max-width: 600px;
+  }
+
+  .home-buttons,
+  .home-social {
+    justify-content: center;
+  }
+
+  .home-visual {
+    height: 500px;
+    margin-top: 20px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .home-section {
+    min-height: auto;
+    padding: 110px 20px 30px;
+  }
+
+  .home-content h1,
+  .home-content h2 {
+    font-size: 34px;
+  }
+
+  .home-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .home-visual {
+    height: 430px;
+    margin-top: 20px;
+  }
+
+  .photo-frame {
+    width: 280px;
+    height: 390px;
+    border-radius: 150px 150px 18px 18px;
+  }
+
+  .photo-frame::before {
+    width: 300px;
+    height: 410px;
+    border-radius: 160px 160px 20px 20px;
+    top: -10px;
+  }
+
+  .photo-frame::after {
+    width: 320px;
+    height: 430px;
+    border-radius: 170px 170px 25px 25px;
+    top: -20px;
+  }
+
+  .profile-image {
+    border-radius: 150px 150px 18px 18px;
+  }
+
+  .star-one {
+    left: 20px;
+    top: 190px;
+  }
+
+  .star-two {
+    right: 15px;
+    top: 70px;
+  }
+
+  .marquee-content {
+    font-size: 16px;
+    gap: 25px;
+    padding-right: 25px;
+  }
+
+  .marquee-content b {
+    font-size: 19px;
+  }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .home-content h1,
+  .home-content h2 {
+    font-size: 30px;
+  }
+
+  .home-visual {
+    height: 390px;
+  }
+
+  .photo-frame {
+    width: 245px;
+    height: 350px;
+  }
+
+  .photo-frame::before {
+    width: 265px;
+    height: 370px;
+  }
+
+  .photo-frame::after {
+    width: 285px;
+    height: 390px;
+  }
+
+  .profile-image {
+    border-radius: 130px 130px 15px 15px;
+  }
+
+  .star-one {
+    left: 5px;
+  }
+
+  .star-two {
+    right: 5px;
+  }
+}
