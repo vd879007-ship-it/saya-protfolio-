@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaArrowRight } from 'react-icons/fa';
+import mineImg from '../Assets/mine.jpeg';
 import './Home.css';
 
 const Home = () => {
@@ -83,7 +84,7 @@ const Home = () => {
 
             <div className="photo-frame">
               <img
-                src="src\Assets\mine.jpeg"
+                src={mineImg}
                 alt="Sayasri Balaji"
                 className="profile-image"
               />

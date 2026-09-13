@@ -1,5 +1,8 @@
 import React from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import port1Img from '../Assets/port1.png';
+import port2Img from '../Assets/port2.png';
+import port3Img from '../Assets/port3.jpg';
 import './Projects.css';
 
 const Projects = () => {
@@ -8,7 +11,7 @@ const Projects = () => {
       name: 'Fundun Holidays',
       description: 'Premium South India travel agency website with destinations, tour packages, booking section, reviews, gallery, and responsive UI.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      image: "src/Assets/port1.png",
+      image: port1Img,
       liveUrl: 'https://fundun.vercel.app/',
       githubUrl: 'https://github.com/Sayasri123'
     },
@@ -33,7 +36,7 @@ const Projects = () => {
       name: 'Instagram clone',
       description: 'Responsive website using HTML, CSS, and JavaScript with modern design principles and a smooth user experience.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      image: "src/Assets/port2.png",
+      image: port2Img,
       liveUrl: '#',
       githubUrl: 'https://github.com/Sayasri123'
     },
@@ -42,7 +45,7 @@ const Projects = () => {
       name: 'Portfolio',
       description: 'Responsive website using HTML, CSS, and JavaScript with modern design principles and a smooth user experience.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      image: "src/Assets/port3.jpg",
+      image: port3Img,
       liveUrl: '#',
       githubUrl: 'https://github.com/Sayasri123'
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import resumeFile from '../Assets/Sayasri_resume(1).pdf';
+import chatImg from '../Assets/chat.png';
 import './About.css';
 
 const About = () => {
@@ -12,7 +13,7 @@ const About = () => {
         <div className="about-image-col">
           <div className="about-photo-frame">
             <img
-              src="src\Assets\chat.png"
+              src={chatImg}
               alt="Sayasri Balaji"
               className="about-profile-img"
             />
